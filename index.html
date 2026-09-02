@@ -19,7 +19,7 @@
   *{box-sizing:border-box;}
   body{
     margin:0; background:var(--creme); color:var(--texto);
-    font-family:'Nunito Sans', sans-serif; line-height:1.55;
+    font-family:'Inter', sans-serif; line-height:1.55;
   }
   .titulo, .marca, h1, h2, h3{ font-family:'Fredoka', sans-serif; font-weight:600; }
   .wrap{ max-width:760px; margin:0 auto; padding:0 20px 64px; }
@@ -33,7 +33,7 @@
   .hero-inner{ max-width:760px; margin:0 auto; position:relative; z-index:2; }
   .brandrow{ display:flex; align-items:center; gap:14px; margin-bottom:22px; }
   .logo{
-    width:60px; height:60px; border-radius:50%;
+    width:140px; height:140px; border-radius:50%;
     display:flex; align-items:center; justify-content:center; flex-shrink:0;
   }
   .logo img{ width:100%; height:100%; object-fit:contain; }
@@ -42,11 +42,11 @@
   .hero h1{
     color:var(--creme); font-size:32px; line-height:1.15; margin:0 0 10px; max-width:520px;
   }
-  .hero p.tag{ color:var(--verde-100); font-size:16px; margin:0 0 26px; max-width:460px; }
+  .hero p.tag{ color:var(--verde-100); font-size:18px; margin:0 0 26px; max-width:460px; }
   .badge2026{
     display:inline-flex; align-items:center; gap:8px; background:var(--tijolo-600);
     color:var(--creme); font-family:'Fredoka',sans-serif; font-weight:600; font-size:14px;
-    padding:9px 18px; border-radius:30px;
+    padding:9px 18px; border-radius:2px;
   }
   .hero-deco{ position:absolute; right:-40px; top:-20px; width:220px; height:220px;
     background:var(--verde-600); border-radius:50%; opacity:.35; z-index:1; }
@@ -56,14 +56,14 @@
   /* SOBRE */
   .sobre{ margin-top:-28px; position:relative; z-index:3; }
   .card{
-    background:var(--branco); border:1px solid var(--bege-borda); border-radius:16px;
+    background:var(--branco); border:1px solid var(--bege-borda); border-radius:2px;
     padding:26px 26px; box-shadow:0 1px 0 rgba(0,0,0,.02);
   }
   .sobre h2{ margin:0 0 14px; font-size:19px; color:var(--verde-800); }
   .pontos{ list-style:none; margin:0; padding:0; display:grid; gap:12px; }
   .pontos li{ display:flex; gap:12px; align-items:flex-start; font-size:15px; color:var(--texto-suave); }
   .pontos li .marca-ponto{
-    flex-shrink:0; width:22px; height:22px; border-radius:6px; background:var(--verde-100);
+    flex-shrink:0; width:22px; height:22px; border-radius:2px; background:var(--verde-100);
     color:var(--verde-800); display:flex; align-items:center; justify-content:center;
     font-family:'Fredoka',sans-serif; font-size:12px; font-weight:600; margin-top:1px;
   }
@@ -80,7 +80,7 @@
   label{ display:block; font-size:13.5px; font-weight:700; color:var(--texto); margin-bottom:6px; }
   .opcional{ font-weight:400; color:var(--texto-fraco); }
   input[type=text], input[type=tel], input[type=email], input[type=date], select, textarea{
-    width:100%; border:1.5px solid var(--bege-borda); border-radius:10px; padding:11px 13px;
+    width:100%; border:1.5px solid var(--bege-borda); border-radius:2px; padding:11px 13px;
     font-family:'Nunito Sans',sans-serif; font-size:15px; color:var(--texto); background:var(--creme);
     transition:border-color .15s;
   }
@@ -88,7 +88,7 @@
   textarea{ resize:vertical; min-height:80px; }
   .grupo-radio{ display:flex; flex-wrap:wrap; gap:10px; }
   .radio-pill{
-    border:1.5px solid var(--bege-borda); border-radius:30px; padding:9px 16px; font-size:14px;
+    border:1.5px solid var(--bege-borda); border-radius:2px; padding:9px 16px; font-size:14px;
     cursor:pointer; color:var(--texto-suave); user-select:none; background:var(--creme);
   }
   .radio-pill input{ display:none; }
@@ -98,7 +98,7 @@
   input.invalido, select.invalido{ border-color:var(--erro); }
 
   input[type=file]{
-    width:100%; border:1.5px dashed var(--bege-borda); border-radius:10px; padding:14px 13px;
+    width:100%; border:1.5px dashed var(--bege-borda); border-radius:2px; padding:14px 13px;
     font-family:'Nunito Sans',sans-serif; font-size:14px; color:var(--texto-suave); background:var(--creme);
   }
   input[type=file]:focus{ outline:none; border-color:var(--verde-600); }
@@ -106,7 +106,7 @@
   .lista-ficheiros{ display:grid; gap:6px; margin-top:10px; }
   .ficheiro-item{
     display:flex; align-items:center; justify-content:space-between; gap:10px;
-    background:var(--branco); border:1px solid var(--bege-borda); border-radius:8px;
+    background:var(--branco); border:1px solid var(--bege-borda); border-radius:2px;
     padding:8px 12px; font-size:13px; color:var(--texto);
   }
   .ficheiro-item .nome-ficheiro{ overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
@@ -115,14 +115,14 @@
   .btn-enviar{
     margin-top:6px; background:var(--tijolo-600); color:var(--creme); border:none;
     font-family:'Fredoka',sans-serif; font-weight:600; font-size:16px; padding:14px 20px;
-    border-radius:12px; cursor:pointer; transition:background .15s;
+    border-radius:2px; cursor:pointer; transition:background .15s;
   }
   .btn-enviar:hover{ background:var(--tijolo-700); }
   .btn-enviar:active{ transform:scale(.99); }
 
   .confirmacao{
     display:none; background:var(--verde-100); border:1.5px solid var(--verde-400);
-    border-radius:14px; padding:20px 22px; margin-top:18px;
+    border-radius:2px; padding:20px 22px; margin-top:18px;
   }
   .confirmacao.mostrar{ display:block; }
   .confirmacao h3{ margin:0 0 6px; color:var(--verde-800); font-size:17px; }
@@ -131,7 +131,7 @@
   /* ADMIN */
   .admin-toggle{
     margin-top:44px; background:none; border:1px dashed var(--bege-borda); color:var(--texto-fraco);
-    font-family:'Nunito Sans',sans-serif; font-size:13px; padding:10px 14px; border-radius:10px;
+    font-family:'Nunito Sans',sans-serif; font-size:13px; padding:10px 14px; border-radius:2px;
     cursor:pointer; width:100%; text-align:left;
   }
   .admin-toggle:hover{ border-color:var(--verde-600); color:var(--verde-700); }
@@ -140,7 +140,7 @@
   .aviso-partilha{ font-size:12.5px; color:var(--texto-fraco); margin:0 0 14px; }
   .lista-inscricoes{ display:grid; gap:10px; }
   .item-inscricao{
-    border:1px solid var(--bege-borda); border-radius:12px; padding:14px 16px;
+    border:1px solid var(--bege-borda); border-radius:2px; padding:14px 16px;
     display:flex; justify-content:space-between; gap:12px; align-items:flex-start;
     background:var(--creme);
   }
@@ -148,7 +148,7 @@
   .item-inscricao .detalhe{ font-size:12.5px; color:var(--texto-fraco); margin-top:3px; }
   .item-inscricao .remover{
     border:none; background:none; color:var(--texto-fraco); cursor:pointer; font-size:13px;
-    flex-shrink:0; padding:4px 8px; border-radius:6px;
+    flex-shrink:0; padding:4px 8px; border-radius:2px;
   }
   .item-inscricao .remover:hover{ color:var(--erro); background:var(--tijolo-100); }
   .link-doc{ color:var(--verde-700); text-decoration:underline; }
